@@ -50,7 +50,6 @@ a:hover {
 }
 .logo2 img, .logo3 img {
 	max-width: 100%;
-	max-height: 3rem;
 	display: block;
 	margin: 0 auto;
 }
@@ -179,13 +178,8 @@ div#mce-errorr-response {color: #ff0000;}
 
 /*ICONS*/
 
-.icon {
-	margin: 2% auto;
-	max-width: 130px;
-}
-
 .icon img {
-	max-width: 90%;
+	max-width: 100%;
 	display: block;	
 	margin:0 auto;
 
@@ -217,8 +211,6 @@ div#mce-errorr-response {color: #ff0000;}
 }
 .about img {
 	max-width: 100%;
-	display: block;
-	margin: 0 auto;
 }
 
 .prgbr {
