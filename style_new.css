@@ -69,8 +69,15 @@ a:hover {
 	background-attachment: fixed;
 	-webkit-box-shadow: -2px 0px 14px 9px rgba(204,204,204,1);
 }
+
+/*MODAL*/
+
+h2#ModalLabel {margin: 0 auto;}
 .modal .btn-info {background:#00A3DD;border: 2px solid transparent;font-family:inherit;}
 .modal .btn-info:hover {background: #fff;color: #00A3DD;border: 2px solid #00A3DD;}
+div#mce-success-response {color: #333;}
+div#mce-errorr-response {color: #ff0000;}
+#mc_embed_signup div.mce_inline_error {background-color: #ff0000;}
 
 /*BUTTONS*/
 
@@ -203,15 +210,6 @@ a:hover {
 	margin: 0 auto;
 }
 
-div#mce-success-response {
-	color: #333;
-}
-div#mce-errorr-response {
-	color: #ff0000;
-}
-#mc_embed_signup div.mce_inline_error {
-	background-color: #ff0000;
-}
 /*OTHER*/
 
 .left1 p {
