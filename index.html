@@ -112,32 +112,6 @@
 										<input class="button btn btn-info btn-lg pulse" id="mc-embedded-subscribe" name="subscribe" type="submit" value="Wyślij">
 									</div>
 								</div>
-								<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-								<script type='text/javascript'>
-									(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='phone'; /*
-									 * Translated default messages for the $ validation plugin.
-									 * Locale: PL
-									 */
-									$.extend($.validator.messages, {
-										required: "To pole jest wymagane.",
-										remote: "Proszę o wypełnienie tego pola.",
-										email: "Proszę o podanie prawidłowego adresu email.",
-										url: "Proszę o podanie prawidłowego URL.",
-										date: "Proszę o podanie prawidłowej daty.",
-										dateISO: "Proszę o podanie prawidłowej daty (ISO).",
-										number: "Proszę o podanie prawidłowej liczby.",
-										digits: "Proszę o podanie samych cyfr.",
-										creditcard: "Proszę o podanie prawidłowej karty kredytowej.",
-										equalTo: "Proszę o podanie tej samej wartości ponownie.",
-										accept: "Proszę o podanie wartości z prawidłowym rozszerzeniem.",
-										maxlength: $.validator.format("Proszę o podanie nie więcej niż {0} znaków."),
-										minlength: $.validator.format("Proszę o podanie przynajmniej {0} znaków."),
-										rangelength: $.validator.format("Proszę o podanie wartości o długości od {0} do {1} znaków."),
-										range: $.validator.format("Proszę o podanie wartości z przedziału od {0} do {1}."),
-										max: $.validator.format("Proszę o podanie wartości mniejszej bądź równej {0}."),
-										min: $.validator.format("Proszę o podanie wartości większej bądź równej {0}.")
-									});}(jQuery));var $mcj = jQuery.noConflict(true);
-								</script>
 							</form>
 						</div><!--End mc_embed_signup-->
 			      </div>
@@ -453,32 +427,6 @@
 										<input class="button btn btn-secondary btn-block" id="mc-embedded-subscribe" name="subscribe" type="submit" value="Wyślij">
 									</div>
 								</div>
-								<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-									<script type='text/javascript'>
-										(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='phone'; /*
-										 * Translated default messages for the $ validation plugin.
-										 * Locale: PL
-										 */
-										$.extend($.validator.messages, {
-											required: "To pole jest wymagane.",
-											remote: "Proszę o wypełnienie tego pola.",
-											email: "Proszę o podanie prawidłowego adresu email.",
-											url: "Proszę o podanie prawidłowego URL.",
-											date: "Proszę o podanie prawidłowej daty.",
-											dateISO: "Proszę o podanie prawidłowej daty (ISO).",
-											number: "Proszę o podanie prawidłowej liczby.",
-											digits: "Proszę o podanie samych cyfr.",
-											creditcard: "Proszę o podanie prawidłowej karty kredytowej.",
-											equalTo: "Proszę o podanie tej samej wartości ponownie.",
-											accept: "Proszę o podanie wartości z prawidłowym rozszerzeniem.",
-											maxlength: $.validator.format("Proszę o podanie nie więcej niż {0} znaków."),
-											minlength: $.validator.format("Proszę o podanie przynajmniej {0} znaków."),
-											rangelength: $.validator.format("Proszę o podanie wartości o długości od {0} do {1} znaków."),
-											range: $.validator.format("Proszę o podanie wartości z przedziału od {0} do {1}."),
-											max: $.validator.format("Proszę o podanie wartości mniejszej bądź równej {0}."),
-											min: $.validator.format("Proszę o podanie wartości większej bądź równej {0}.")
-										});}(jQuery));var $mcj = jQuery.noConflict(true);
-									</script>
 							</form>
 						</div><!--End mc_embed_signup-->
 					</div>
@@ -534,5 +482,33 @@
 	    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
 	    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
 	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	    <!--mailchimp scripts-->
+	    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+		<script type='text/javascript'>
+			(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[0]='EMAIL';ftypes[0]='email';fnames[3]='MMERGE3';ftypes[3]='phone'; /*
+			 * Translated default messages for the $ validation plugin.
+			 * Locale: PL
+			 */
+			$.extend($.validator.messages, {
+				required: "To pole jest wymagane.",
+				remote: "Proszę o wypełnienie tego pola.",
+				email: "Proszę o podanie prawidłowego adresu email.",
+				url: "Proszę o podanie prawidłowego URL.",
+				date: "Proszę o podanie prawidłowej daty.",
+				dateISO: "Proszę o podanie prawidłowej daty (ISO).",
+				number: "Proszę o podanie prawidłowej liczby.",
+				digits: "Proszę o podanie samych cyfr.",
+				creditcard: "Proszę o podanie prawidłowej karty kredytowej.",
+				equalTo: "Proszę o podanie tej samej wartości ponownie.",
+				accept: "Proszę o podanie wartości z prawidłowym rozszerzeniem.",
+				maxlength: $.validator.format("Proszę o podanie nie więcej niż {0} znaków."),
+				minlength: $.validator.format("Proszę o podanie przynajmniej {0} znaków."),
+				rangelength: $.validator.format("Proszę o podanie wartości o długości od {0} do {1} znaków."),
+				range: $.validator.format("Proszę o podanie wartości z przedziału od {0} do {1}."),
+				max: $.validator.format("Proszę o podanie wartości mniejszej bądź równej {0}."),
+				min: $.validator.format("Proszę o podanie wartości większej bądź równej {0}.")
+			});}(jQuery));var $mcj = jQuery.noConflict(true);
+		</script>
 	</body>
 </html>
