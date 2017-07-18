@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+    	<title>Kursy programowania od podstaw - Zachodniopomorska Szkoła Programowania</title>
+		<meta charset="utf-8">
+		<meta name="description" content="projekt">
+		<meta name="author" content="Agata Walter">
+	    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	    <!--stylesheets-->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:200,300,400,600,700 &subset=latin-ext" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="style_new.css">
+	    <!--<link rel="stylesheet" type="text/css" media="all" href="animate.css">-->
+   
+	    <!--favicon-->
+	    <link rel="shortcut icon" type="image/ico" href="/favicon.ico"/>
+	    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon" />
+
+	    <!--scripts-->
+	    <script src="https://use.fontawesome.com/1990b2990e.js"></script>
+	    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	</head>
+
+	<body style="margin-top: 3rem;">
+<!--NAVBAR-->
+		<nav class="navbar fixed-top navbar-inverse bg-inverse p-0">
+		  <form class="form-inline">
+		  <a class="navbar-brand mx-2" href="#start" data-toggle="tooltip" data-placement="bottom" title="top">ZSP</a>
+		    <a class="btn btn-outline-info btn-sm mx-auto text-white" href="#info1" data-toggle="tooltip" data-placement="bottom" title="info">
+		        <i class="fa fa-info-circle" aria-hidden="true"></i> <span class="sr-only">(current)</span>
+		    </a>
+		        <a class="btn btn-outline-info btn-sm mx-auto text-white" href="#about" data-toggle="tooltip" data-placement="bottom" title="o nas">
+		        <i class="fa fa-users" aria-hidden="true"></i>
+		        </a>
+		        <a class="btn btn-outline-info btn-sm mx-auto text-white" href="#carrier" data-toggle="tooltip" data-placement="bottom" title="ścieżka kariery">
+		        <i class="fa fa-line-chart" aria-hidden="true"></i>
+		        </a>
+		     <a class="btn btn-outline-info  btn-sm mx-auto text-white itpoland" href="#itpoland" data-toggle="tooltip" data-placement="bottom" title="it w polsce">
+		        <i class="fa fa-desktop" aria-hidden="true"></i>
+		        </a>
+		        <a class="btn btn-outline-info btn-sm mx-auto text-white" href="#our_bootcamp" data-toggle="tooltip" data-placement="bottom" title="nasze kursy">
+		        <i class="fa fa-graduation-cap" aria-hidden="true"></i>
+		        </a>
+		        <a class="btn btn-outline-info  btn-sm mx-auto text-white" href="#form_contact_us" data-toggle="tooltip" data-placement="bottom" title="formularz">
+		        	<i class="fa fa-list" aria-hidden="true"></i>
+		        </a>
+		        <a class="btn btn-outline-info btn-sm mx-auto text-white" href="#partners" data-toggle="tooltip" data-placement="bottom" title="partnerzy">
+		        <i class="fa fa-handshake-o" aria-hidden="true"></i>
+		        </a>
+		        <a class="btn btn-outline-info btn-sm mx-auto text-white" href="#contact" data-toggle="tooltip" data-placement="bottom" title="kontakt">
+		        <i class="fa fa-envelope" aria-hidden="true"></i>
+		        </a>
+		      </form>
+		</nav>
+<!--HEADER-->
+		<header id="start">
+			<div class="container">
+				<div class="row py-5">
+					<div class="col-lg-6 col-sm-12 m-auto">
+						<div class="logo1 text-uppercase py-2">
+							<h2 class="p-0 m-0"><strong>Zachodniopomorska</strong></h2>
+							<h3 class="p-0 m-0"><strong>Szkoła Programowania</strong></h3>
+						</div>
+					</div>
+					<div class="col-lg-3 col-sm-6 m-auto logo2 py-2">
+						<a href="http://www.netcamp.pl" data-toggle="tooltip" data-placement="bottom"  title="netcamp" target="_blank">
+							<img src="images/netcamp.png"  class="m-auto d-block" alt="netcamp logo"/>
+						</a>
+						<p class="text-muted text-center m-0">Koordynator</p>
+					</div>
+					<div class="col-lg-3 col-sm-6 logo3 py-2">
+						<a href="http://infoshareacademy.com" data-toggle="tooltip" data-placement="bottom"  title="infoshare" target="_blank">
+						<img src="images/infoshare.png" class="m-auto d-block" alt="info share logo"/>
+						</a>
+						<p class="text-muted text-center m-0">Partner merytoryczny</p>
+					</div>
+				</div><!--row-->
+			</div><!--container-->
+		</header>
+<!--JUMBOTRON-->
+		<section class="jumbotron text-center">
+			<h1 class="py-3">Pracuj jako <strong>PROGRAMISTA</strong></h1>
+			<h2 class="py-3">Zdobądź zawód przyszłości!</h2>
+			<button type="button" class="btn btn-primary btn-lg pulse" data-toggle="modal" data-target=".bd-modal" data-whatever="@text">Dowiedz się więcej  <i class="fa fa-info-circle" aria-hidden="true"></i></button>
+<!--MODAL-->			
+			<div class="modal fade bd-modal" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h2 class="modal-title text-primary text-center" id="ModalLabel">Chcesz zostać programistą?*</h2>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+<!--FORM MAILCHIMP-->
+			        <div id="mc_embed_signup">
+							<form>
+								<div id="mc_embed_signup_scroll">
+									<div class="mc-field-group form-group text-primary"> 
+										<label for="mce-FNAME">*Podaj swoje dane a co 2 dni wyślemy Ci kolejną część przewodnika <br/>"Kariera Programisty" <i class="fa fa-smile-o" aria-hidden="true"></i> </label>
+										<input class="required form-control text-primary" id="mce-FNAME" name="FNAME" type="text" value="" placeholder="Imię">
+									</div>
+									<div class="mc-field-group form-group text-primary"> 
+										<input class="required email form-control text-primary" id="mce-EMAIL" name="EMAIL" type="email" value="" placeholder="Email">
+									</div>
+									<div class="mc-field-group size1of2 form-group text-primary"> 
+										<input class="form-control text-primary" id="mce-MMERGE3" name="MMERGE3" type="text" value="" placeholder="Telefon">
+									</div>
+									<div class="clear" id="mce-responses">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div aria-hidden="true" style="position: absolute; left: -5000px;">
+										<input name="b_e335a0cf29babb45e4d171c19_fda1aedd33" tabindex="-1" type="text" value="">
+									</div>
+									<div>
+									<small id="emailHelp" class="form-text text-primary text-justify my-1">
+										<input type="checkbox" name="person" value="accept" checked> 
+										 Wyrażam zgodę na przetwarzanie moich danych osobowych przez Fundację Netcamp oraz Infoshare Academy i zgadzam się na otrzymywanie informacji o kursach programowania drogą elektroniczną. W każdej chwili możesz też wypisać się z naszej listy.
+									</small>
+									</div>
+									<div class="form-group">
+										<input class="button btn btn-info btn-lg pulse" id="mc-embedded-subscribe" name="subscribe" type="submit" value="Wyślij">
+									</div>
+								</div><script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+								
+							</form>
+						</div><!--End mc_embed_signup-->
+			      </div>
+			    </div>
+			  </div>
+			</div><!--modal-->
+		</section>
+<!--INFO-->
+		<section class="info1 text-center" id="info1">
+			<div class="container">
+				<h5 class="pb-3">Z nami zaczniesz myśleć jak programista! </h5>
+				<div class="row py-3">
+					<div class="col-lg-3 col-6 py-2">
+						<div class="icons1">
+							<i class="fa fa-sitemap" aria-hidden="true"></i>
+						</div>
+						<div class="icons2 py-2">
+							<p>stworzysz CV</p>
+							<p>założysz portfolio</p>
+							<p>otrzymasz wsparcie</p>
+							<p>oraz kontakt</p>
+							<p>z pracodawcami</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6 py-2">
+						<div class="icons1">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+						</div>
+						<div class="icons2 py-2">
+							<p>8 tygodni</p>
+							<p> tryb dzienny</p>
+							<p>20 weekendów</p>
+							<p>kurs zaoczny</p>
+							<p>	320 h</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6 py-2">
+						<div class="icons1">
+							<i class="fa fa-rocket" aria-hidden="true"></i>
+						</div>
+						<div class="icons2 py-2">
+							<p>zapewniamy</p>
+							<p>intensywną naukę</p>
+							<p>pod okiem mentorów</p>
+							<p>oraz dodatkowe</p>
+							<p>materiały szkoleniowe</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-6 py-2">
+						<div class="icons1">
+							<i class="fa fa-certificate" aria-hidden="true"></i>
+						</div>
+						<div class="icons2 py-2">
+							<p>70%</p>
+							<p>naszych</p>
+							<p>absolwentów</p>
+							<p>znajduje pracę</p>
+							<p>w branży IT</p>
+						</div>
+					</div>
+				</div>
+				<h5 class="pt-3 pb-4"><strong>100 PROGRAMISTÓW DLA SZCZECINA</strong></h5>
+			</div>
+		</section>
+		<section class="about" id="about">
+			<div class="container py-5">
+				<div class="row text-justify">
+					<div class="col-md-4 right1">
+						<a href="#partners" data-toggle="tooltip" data-placement="bottom" title="partnerzy">
+	<!--graphics-->		<img src="images/info1_new_graphic.png" alt="tech" style="max-width: 100%;" class="mx-auto d-block"/></a>
+					</div>
+					<div class="col-md-8 left1">
+						<h3 class="text-info">Dlaczego warto wybrać naszą szkołę?</h3>
+						<p><i class="fa fa-handshake-o text-success" aria-hidden="true"></i>  Połączone siły <strong class="text-success">Fundacji Netcamp oraz infoShare Academy</strong> to kilkanaście lat doświadczeń w branży,
+						 sprawdzona na ponad 200 uczestnikach formuła oraz wysoka jakość kursów</p>
+						<p><i class="fa fa-trophy text-success" aria-hidden="true"></i>  Nasi partnerzy to <strong class="text-success">najlepsze firmy IT</strong> w regionie, które szukają ambitnych junior developerów. 
+						Poza praktyczną wiedzą zapewnimy Ci <strong class="text-success">wsparcie w znalezieniu pracy po kursie! </strong></p>
+						<p><i class="fa fa-graduation-cap text-success" aria-hidden="true"></i>   Możesz się do nas zgłosić niezależnie od wykształcenia - <strong class="text-success">nauczymy Cię programowania od podstaw! </strong></p>
+						<p><i class="fa fa-space-shuttle text-success" aria-hidden="true"></i>   Programowanie to  nie fizyka termojądrowa ani rocket science 
+						- jeśli masz umiejętność analitycznego i logicznego myślenia <strong class="text-success">- dasz sobie z tym radę <i class="fa fa-smile-o" aria-hidden="true"></i></strong> </p>
+					</div>
+					
+				</div>
+			</div>
+		</section>
+<!--INFO3 CARRIER PATH-->
+		<section class="info3" id="carrier">
+			<div class="container py-5 text-center">
+				<h2>Ścieżka kariery z <strong class="text-white">Zachodniopomorską Szkołą Programowania*</strong></h2>
+				<p>*czyli to, co dla Ciebie najważniejsze</p>
+				<div class="row py-3">
+					<div class="col-sm-6 col-lg-3 py-2 step">
+						<i class="fa fa-paper-plane" aria-hidden="true"></i>
+						<p>etap 1</p>
+						<p class="pb-1">wysyłasz do nas zgłoszenie</p>
+					</div>
+					<div class="col-sm-6 col-lg-2 py-2 step">
+						<i class="fa fa-list-ul" aria-hidden="true"></i>
+						<p>etap 2</p>
+						<p class="pb-1">wypełniasz test predyspozycji</p>
+					</div>
+					<div class="col-sm-6 col-lg-2 py-2 step">
+						<i class="fa fa-id-card" aria-hidden="true"></i>
+						<p>etap 3</p>
+						<p class="pb-1">załatwiamy formalności</p>
+					</div>
+					<div class="col-sm-6 col-lg-2 py-2 step">
+						<i class="fa fa-rocket" aria-hidden="true"></i>
+						<p>etap 4</p>
+						<p class="pb-1">startujesz z kursem</p>
+					</div>
+					<div class="col-sm-12 col-lg-3 py-2">
+						<i class="fa fa-users" aria-hidden="true"></i>
+						<p>etap 5</p>
+						<p>szkolisz się pod okiem mentora</p>
+					</div>
+				</div><!--row-->
+				<div class="prgbr"></div>
+				<div class="row py-3">
+					<div class="col-sm-6 col-lg-3 py-2 step">
+						<i class="fa fa-check-square-o" aria-hidden="true"></i>
+						<p>etap 6</p>
+						<p class="pb-1">dzielnie pokonujesz trudności</p>
+					</div>
+					<div class="col-sm-6 col-lg-2 py-2 step">
+						<i class="fa fa-fort-awesome" aria-hidden="true"></i>
+						<p>etap 7</p>
+						<p class="pb-1">zdobywasz certyfikat</p>
+					</div>
+					<div class="col-sm-6 col-lg-2 py-2 step">
+						<i class="fa fa-github" aria-hidden="true"></i>
+						<p>etap 8</p>
+						<p class="pb-1">rzeźbisz z nami pokazowe porfolio</p>
+					</div>
+					<div class="col-sm-6 col-lg-2 py-2 step">
+						<i class="fa fa-handshake-o" aria-hidden="true"></i>
+						<p>etap 9</p>
+						<p class="pb-1">spotykasz się z pracodawcami</p>
+					</div>
+					<div class="col-sm-12 col-lg-3 py-2">
+						<i class="fa fa-laptop" aria-hidden="true"></i>
+						<p>etap 10</p>
+						<p>rozpoczynasz pracę w firmie IT</p>
+					</div>
+				</div>
+			</div>
+		</section>
+<!--info o IT 2016-->
+		<section class="info2 text-center" id="itpoland">
+			<div class="container py-5">
+				<h2 class="text-center py-2">
+				W Polsce aktualnie brakuje ok. 50 tysięcy specjalistów IT</h2>
+				<div class="row py-3">
+					<div class="col">
+						<p><strong> Stanowiska:</strong></p>
+						<p>Javascript Developer</p>
+						<p>Tester</p>
+						<p>Java Developer</p>
+						<p>Web Developer</p>
+					</div>
+					<div class=" col">
+						<p><strong>Zarobki:</strong></p>
+						<p>Junior: ok. 2-3 tys. netto</p>
+						<p>Regular: ok. 3-6 tys. netto</p>
+						<p>Lead: ok. 7 tys. netto</p>
+						<p>Senior: ok. 6-12 tys. netto</p>
+					 </div>
+					<div class="col">
+						<p><strong>Benefity:</strong></p>
+						<p>Udział w konferencjach</p>
+						<p>Praca w nowoczesnych biurach</p>
+						<p>Płatne szkolenia</p>
+						<p>Opcja pracy zdalnej</p>
+					</div>
+					<div class="col">
+						<p><strong>Edukacja</strong></p>
+						<p>ok. 60% pracowników IT</p>
+						<p><strong> to samouki</strong></p>
+						<p>30% z nich korzystało</p>
+						<p><strong>z kursów programowania</strong></p>
+					</div>
+				</div><!--row-->
+			</div>
+		</section>
+<!--OPIS KURSÓW FRONT I BACK-->			
+		<section class="main" id="our_bootcamp">
+			<div class="container py-5">
+				<div class="row py-3">
+	<!--FRONT-END-->
+					<div class="left col-lg-6 col-sm-12 text-justify py-2" id="front-end">
+						<h3 class="text-center">Front-end</h3>
+						<p>Strony internetowe są efektem wielu współpracujących warstw: szkieletu, danych, treści, funkcjonalności oraz projektu. Tworzenie tych składników jest zadaniem front-end developera. Korzystając z kombinacji języków, znaczników i skryptów tworzy nowoczesną zawartość, przejrzysty układ i płynne interakcje - środowisko dla wszystkich rzeczy, które użytkownicy widzą i dotykają.</p>
+						<p> Na tym kursie nauczysz się m.in. tworzenia struktury strony, kształtowania jej wyglądu, wprowadzania interakcji z użytkownikiem,
+						poznasz podstawowe narzędzia programistyczne, stosowane w codziennej pracy developera.</p>
+						<div class="row">
+							<div class="icon col-3">
+								<img src="images/js.png" alt="js"/>
+							</div>
+							<div class=" icon col-3">
+								<img src="images/bootstrap.png" alt="bootstrap"/>
+							</div>
+							<div class="icon col-3">
+								<img src="images/react.png" alt="react"/>
+							</div>
+							<div class=" icon col-3">
+								<img src="images/ajax.png" alt="ajax"/>
+							</div>
+						</div><!--row-->
+	<!--FRONT_END INFO-->
+						<h3 class="text-center pt-4  pb-2">Najbliższe kursy:</h3>
+						<div class="row text-center minht">
+							<div class="col-sm-12 col-lg-4">
+								<p>Termin:</p>
+								<p class="text-info"><strong>22 sierpnia - 23 października 2017 </strong></p>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<p>Kurs:</p>
+								<div><strong>FRONT-END</strong></div>
+								<div>dzienne</div>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<p class="mpad">Koszt:</p>
+								<p><strong>od 8900 zł</strong>
+								</p>
+							</div>
+						</div><!--row-->
+						<div class="row">
+							<div class="col">
+								<a href="#" class="btn btn-success btn-lg btn-block text-white" data-toggle="tooltip" data-placement="bottom"  title="kurs front-end dzienne" target="_blank" >
+								Zapisz mnie na Front-end dzienny</a>
+							</div>
+						</div><!--row-->
+	<!--zaoczne-->		<div class="row text-center minht">
+							<div class="col-sm-12 col-lg-4">
+								<p class="mpad">Termin:</p>
+								<div class="text-info"><strong> 19 sierpnia - 25 lutego 2018 </strong></div>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<p class="mpad">Kurs:</p>
+								<div><strong>FRONT-END</strong></div>
+								<div>zaoczne</div>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<p class="mpad">Koszt:</p>
+								<p><strong>od 8490 zł</strong>
+								</p>
+							</div>
+						</div><!--row-->
+						<div class="row">
+							<div class="col">
+								<a href="#" class="btn btn-success btn-lg btn-block text-white" data-toggle="tooltip" data-placement="bottom"  title="kurs front-end zaoczne" target="_blank"">
+								Zapisz mnie na Front-end zaoczny</a>
+							</div>
+						</div><!--row-->
+					</div><!--left-->
+	<!--Backend-->
+					<div class="right col-lg-6 col-sm-12 text-justify py-2" id="backend">
+						<h3 class="text-center">Backend</h3>
+						<p>Backend developer dba o życie i funkcjonalność aplikacji. Używając skryptu po stronie serwera i języków programowania buduje wszystko, co czyni witrynę internetową - część niewidoczną dla użytkowników. Może to obejmować logikę biznesową, która określa, jak dane są wywoływane, ładowane i zapisywane w wyniku interakcji z użytkownikiem; integracje, które podłączają oprogramowanie do serwera; lub oparte na chmurze pakiety, które zawierają kod aplikacji.</p>
+						<p> Na tym kursie nauczysz się m.in. komunikacji z bazą danych, tworzenia architektury aplikacji oraz dbania o ich bezpieczeństwo i wydajność.</p>
+						<div class="row text-center">
+							<div class=" icon col-3">
+								<img src="images/java.png" alt="java"/>
+							</div>
+							<div class="icon col-3">
+								<img src="images/python.png" alt="python"/>
+							</div>
+							<div class=" icon col-3">
+								<img src="images/hb.png" alt="php"/>
+							</div>
+							<div class=" icon col-3">
+								<img src="images/git.png" alt="git"/>
+							</div>
+						</div><!--row-->
+	<!--BACK_END INFO-->
+						<h3 class="text-center pt-4  pb-2">Najbliższe kursy:</h3>
+		<!--Java-->		<div class="row text-center minht">
+							<div class="col-sm-12 col-lg-4">
+								<p>Termin:</p>
+								<p class="text-info"><strong> 19 sierpnia - 25 lutego 2018</strong></p>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<p>Kurs:</p>
+								<div><strong>JAVA</strong></div>
+								<div>zaoczne</div>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<p class="mpad">Koszt:</p>
+								<p><strong>od 8690 zł</strong></p>
+							</div>
+						</div><!--row-->
+						<div class="row">
+							<div class="col">
+								<a href="#" class="btn btn-success btn-lg btn-block text-white" data-toggle="tooltip" data-placement="bottom"  title="kurs java" target="_blank">Zapisz mnie na kurs JAVA</a>
+							</div>
+						</div><!--row-->
+		<!--Python-->	<div class="row text-center minht">
+							<div class="col-sm-12 col-lg-4">
+								<p>Termin:</p>
+								<p class="text-info m-0"><strong> 25 lipca - 14 września </strong></p>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<p>Kurs:</p>
+								<div><strong>PYTHON</strong></div>
+								<div>wieczorowo</div>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<p class="mpad">Koszt:</p>
+								<p><strong>od 2250 zł</strong></p>
+							</div>
+						</div><!--row-->
+						<div class="row">
+							<div class="col">
+								<a href="#" class="btn btn-success btn-lg btn-block text-white"  data-toggle="tooltip" data-placement="bottom"  title="kurs python" target="_blank" >Zapisz mnie na kurs PYTHON</a>
+							</div>
+						</div><!--row-->
+					</div><!--right-->
+				</div><!--end of row-->
+			</div>
+		</section>
+		<section id="kursy-programowania">
+			<div class="container pb-md-4 promotion">
+				<div class="row">
+					<div class="col-12 text-center py-5">
+						<h3 class="text-primary h3"><i class="fa fa-info-circle text-primary mx-2" aria-hidden="true"></i>Obniż koszt kursu</h3>
+						<h5 class="p-0 text-white">Zobacz jakie masz możliwości aby obniżyć koszt/inwestycję w nasze kursy programowania.</h5><br/>
+						<div class="row">
+							<div class="card offset-md-1 col-md-10 offset-md-1 h-100 p-4 mb-md-4">
+								<i class="fa fa-handshake-o text-success my-4" aria-hidden="true"></i> 
+								Nasi partnerzy - najlepsze firmy IT w Szczecinie, oferują zdolnym absolwentom,
+								<span class="d-block p-0">  którzy zostaną zatrudnieni i przejdą pozytywnie okres próbny w firmie
+								<br/> - zwrot części kosztów kursu - nawet do 
+								<span class="text-primary">4 tys zł!</span> 
+								</span>
+							</div>
+						</div>
+						<div class="row">	
+							<div class="card offset-md-1 col-md-5 px-6 py-3">
+								<i class="fa fa-money text-success my-4" aria-hidden="true"></i>
+								Osoby bezrobotne do 30tego roku życia mogą starać się o 
+								<span class="text-primary">bon szkoleniowy</span> w Urzędzie Pracy
+								</div>
+						    <div class="card col-md-5  px-6 py-3">
+						    	<i class="fa fa-building-o text-success my-4" aria-hidden="true"></i>
+						    	Powiatowy Urząd Pracy oferuje dla osób bezrobotnych 
+						    	<span class="text-primary">dofinansowanie szkolenia</span> w kwocie 4 tys. zł
+						    </div>
+						</div>
+						<div class="row pt-md-3">
+							<div class="card  offset-md-1 col-md-5  px-6 py-3">
+						    	<i class="fa fa-university text-success my-4" aria-hidden="true"></i> 
+						    	Możesz skorzystać z płatności w kilku ratach lub 
+						    	<a href="#" data-toggle="tooltip" data-placement="bottom" title="kredyt na kurs" class="btn btn-sm btn-info text-white m-auto" target="_blank">specjalnego kredytu 0% w Alior Banku</a>
+						    </div>
+						    <div class="card col-md-5 px-6 py-3">
+							    <i class="fa fa-envelope text-success my-4" aria-hidden="true"></i>
+							    <div>
+								    Możesz rozłożyć koszt kursu na 18 rat<br/>
+								    <span class="text-primary">do 500 zł/mc</span> płatnych po jego zakończeniu <br/>
+								    <a href="#" data-toggle="tooltip" data-placement="bottom" title="napisz do nas" class="text-primary" >Napisz do nas</a> w sprawie szczegółów.
+								</div>
+						    </div>
+					    </div>
+					</div>
+				</div>
+			</div><!--container-->
+		</section>
+<!--FORM-->
+<!--LEFT-->
+		<section class="form-space text-white" id="form_contact_us">
+			<div class="container">
+				<div class="row py-5">
+					<div class="col-lg-6 col-sm-12">
+<!--MAILCHIMP-->
+						<div id="mc_embed_signup">
+							<form>
+								<div id="mc_embed_signup_scroll">
+									<h4>Zastanawiasz się jak wygląda praca programisty?</h4>
+									<p> Podaj swoje dane a wyślemy Ci nasz przewodnik "Kariera Programisty" <i class="fa fa-smile-o" aria-hidden="true"></i></p>
+									<div class="mc-field-group form-group">
+										<input class="required form-control text-primary" id="mce-FNAME" name="FNAME" type="text" value="" placeholder="Imię">
+									</div>
+									<div class="mc-field-group form-group">
+										<input class="required email form-control text-primary" id="mce-EMAIL" name="EMAIL" type="email" value="" placeholder="Email"> 
+									</div>
+									<div class="mc-field-group size1of2 form-group">
+										<input class="form-control text-primary" id="mce-MMERGE3" name="MMERGE3" type="text" value="" placeholder="Telefon">
+									</div>
+									<div class="clear" id="mce-responses">
+										<div class="response" id="mce-error-response" style="display:none"></div>
+										<div class="response" id="mce-success-response" style="display:none"></div>
+									</div><!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+									<div aria-hidden="true" style="position: absolute; left: -5000px;">
+										<input name="b_e335a0cf29babb45e4d171c19_fda1aedd33" tabindex="-1" type="text" value="">
+									</div>
+									<div>
+									<small id="emailHelp" class="form-text text-white text-justify">
+										<input type="checkbox" name="person" value="accept" checked> 
+										 Wyrażam zgodę na przetwarzanie moich danych osobowych przez Fundację Netcamp oraz Infoshare Academy i zgadzam się na otrzymywanie informacji o kursach programowania drogą elektroniczną. W każdej chwili możesz też wypisać się z naszej listy.
+									</small>
+									</div>
+									<div class="form-group py-3">
+										<input class="button btn btn-secondary btn-block" id="mc-embedded-subscribe" name="subscribe" type="submit" value="Wyślij">
+									</div>
+								</div>
+							</form>
+						</div><!--End mc_embed_signup-->
+					</div>
+<!--RIGHT SIDE GRAPHIC-->
+					<div class="col-lg-6 col-sm-12 text-center">
+						<h3>Zachodniopomorska Szkoła Programowania</h3>
+						<h3 class="py-3 pulse">Start 2017</h3>
+						<img src="images/rocket.png" alt="rocket"/>	
+					</div>
+				</div><!--ROW-->
+			</div><!--container-->
+		</section>
+		<section id="partners">
+			<div class="container pt-3 partners" >
+				<h4 class="text-center py-3">Partnerzy</h4>
+				<div class="row partners py-3">
+					<div class="col my-auto py-3">
+						<a href="#" data-toggle="tooltip" data-placement="bottom" title="odwiedź stronę NCDC" target="_blank" >
+						<img src="images/ncdc.png" alt="NCDC"/>
+						</a>
+					</div>
+					<div class="col my-auto py-3">
+						<a href="#" data-toggle="tooltip" data-placement="bottom" title="odwiedź stronę IAI" target="_blank" >
+						<img src="images/IAI.png" alt="IAI"/></a>
+					</div>
+					<div class="col my-auto py-3">
+						<a href="#" data-toggle="tooltip" data-placement="bottom"  title="odwiedź stronę Huuuge games" target="_blank"  >
+						<img src="images/Huuuge_logo.png" alt="Huuuge Games" style="width: 150px;"/>
+						</a>
+					</div>
+					<div class="col my-auto py-3">
+						<a href="#" data-toggle="tooltip" data-placement="bottom"  title="odwiedź stronę Avid " target="_blank" >
+						<img src="images/avid.png" alt="Avid" style="width: 150px;"/></a>
+					</div>
+					<div class="col my-auto py-3">
+						<a href="#" data-toggle="tooltip" data-placement="bottom"  title="odwiedź stronę Consileon " target="_blank">
+						<img src="images/consileon.png" alt="Consileon"/></a>
+					</div>
+					<!--<div class="col my-auto py-3">
+						<a href="#" data-toggle="tooltip" data-placement="bottom" title="odwiedź stronę " target="_blank"  ><img src="images/netcamp2.png" alt=""/></a>
+					</div>-->
+				</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container contact">
+				<div class="row py-5">
+	<!--Netcamp-->
+					<div class="col-lg-6 col-sm-12 text-center mb-3">
+						<div  class="text-primary text-uppercase">Koordynator:</div>
+						<div class="px-2"><i class="fa fa-id-card-o" aria-hidden="true"></i></div>
+						<div><strong> Fundacja Rozwoju Branży Internetowej Netcamp</strong></div>
+						<div class="px-2"><i class="fa fa-map-o marker" aria-hidden="true"></i></div>
+						<div>Technopark Pomerania, ul. Niemierzyńska 17a, Szczecin</div>
+						<div class="px-2"><i class="fa fa-facebook-square text-primary" aria-hidden="true"></i> </div>
+						<div>
+							<a href="#" data-toggle="tooltip" data-placement="bottom" title="odwiedź nas">Zachodniopomorska Szkoła Programowania</a>
+						</div>
+						<div class="px-2"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+						<div>
+							<a href="#" data-toggle="tooltip" data-placement="bottom" title="napisz do nas" class="text-primary">zsp@netcamp.pl</a>
+						</div>
+						<div class="px-2"><i class="fa fa-star-o" aria-hidden="true"></i></div>
+						<div>
+							<a href="#" data-toggle="tooltip" data-placement="bottom"  title="netcamp.pl" target="_blank"> www.netcamp.pl</a>
+						</div>
+					</div>
+		<!--Infoshare-->
+					<div class="col-lg-6 col-sm-12 text-center">
+						<div class="text-primary text-uppercase">Partner merytoryczny:</div>
+						<div class="px-2"><i class="fa fa-id-card-o" aria-hidden="true"></i> </div>
+						<div><strong>infoShare Academy sp. z o.o.</strong></div>
+						<div class="px-2"><i class="fa fa-map-o marker" aria-hidden="true"></i></div>
+						<div>Olivia Business Centre, al. Grunwaldzka 472B, Gdańsk</div>
+						<div class="px-2"><i class="fa fa-facebook-square text-primary" aria-hidden="true"></i> </div>
+						<div>
+							<a href="#" data-toggle="tooltip" data-placement="bottom"  title="odwiedź nas">infoShare Academy</a>
+						</div>
+						<div class="px-2"><i class="fa fa-envelope-o" aria-hidden="true"></i></div>
+						<div>
+							<a href="#" data-toggle="tooltip" data-placement="bottom" title="napisz do nas" class="text-primary">kontakt@infoshareacademy.com</a>
+						</div>
+						<div class="px-2"><i class="fa fa-star-o" aria-hidden="true"></i></div>
+						<div>
+							<a href="#" data-toggle="tooltip" data-placement="bottom"  title="infoshare academy" target="_blank">infoshareacademy.com</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="footer_2 mt-2">
+					<div class="text-center my-2 small">
+						Copyrights  <i class="fa fa-copyright" aria-hidden="true"></i>2017 Projekt i wykonanie:<a href="https://angieagava.github.io/portfolio/" title="kontakt"> A.Walter</a> Kopiowanie bez zgody autora zabronione.
+					</div>
+					<div class="cookie-warn small p-3">
+					    <p class="text-center small"><strong>UWAGA!</strong> Niniejsza strona wykorzystuje pliki cookies. 
+					    Informacje uzyskane za pomocą cookies wykorzystywane są głównie 
+					    w celach statystycznych. <br/> Pozostając na stronie godzisz się na 
+					    ich zapisywanie w Twojej przeglądarce. </p>
+					</div>
+				</div>
+		</section>
+    	
+	    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+	    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	    <!--tooltip-->
+		<script>
+		$(function () {
+		  $('[data-toggle="tooltip"]').tooltip()
+		})
+		</script>
+		
+	</body>
+</html>
